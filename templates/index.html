@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Marketplace</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            width: 180px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>📚 Book Recommendation System</h1>
+
+<input type="text" id="bookInput" placeholder="Enter book name">
+<button onclick="getRecommendations()">Search</button>
+
+<h2>Recommended Books:</h2>
+<div id="results" style="display:flex; flex-wrap:wrap; gap:15px;"></div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
